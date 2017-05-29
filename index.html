@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Code Review | Bi Nguyen</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="layout-container">
+      <h1>The Code Review</h1>
+    </div>
+  </header>
+    <div class="layout-container">
+      <h2>Signup for our newsletter</h2>
+      <p>Get the latest news on how your code is doing
+        right in your inbox</p>
+      <hr>
+      <form action="#" method="post">
+        <fieldset class="main-content">
+          <legend>Contact Information</legend>
+            <label for="fullName">Full Name</label>
+            <input required type="text" placeholder="Required"
+              name="fullName" id="fullName">
+            <label for="emailAddress">Email Address</label>
+            <input required type="email" placeholder="Required"
+              name="emailAddress" id="emailAddress">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="telephone" name="phoneNumber" id="phoneNumber">
+            <label for="streetAddress">Street Address</label>
+            <input type="text" name="streetAddress" id="streetAddress">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city">
+            <label for="state">State</label>
+            <select name="state" id="state">
+              <option value="Choose State" disabled selected>Choose State</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </select>
+            <label for="zipCode">Zip Code</label>
+            <input type="text" name="zipCode" id="zipCode">
+        </fieldset>
+        <hr>
+        <fieldset class="secondary-content">
+          <legend>Newsletter</legend>
+            <p>Select the newsletters
+                you would like to recieve</p>
+            <input type="checkbox" name="newsletter" value="htmlNews"
+              id="htmlNews"><label for="htmlNews"><span></span>HTML News</label><br>
+            <input type="checkbox" name="newsletter" value="cssNews"
+              id="cssNews"><label for="cssNews">CCS News</label><br>
+            <input type="checkbox" name="newsletter" value="javascriptNews"
+              id="javascriptNews"><label for="javascriptNews">JAVASCRIPT News</label><br>
+            <p class="newsletterFormat">Newsletter format</p>
+            <input type="radio" name="newsletterFormat" value="html"
+              id="html"><label for="html">HTML</label><br>
+            <input type="radio" name="newsletterFormat" value="plainText"
+              id="plainText"><label for="plainText">Plain Text</label><br>
+            <label for="otherTopics" class="textareaLabel">Other topics you'd like to hear about</label><br>
+            <textarea name="otherTopics" id="otherTopics"></textarea><br>
+            <button type="submit" name="submit" value="sign-up" class="btn">Sign Up</button>
+        </fieldset>
+      </form>
+    </div>
+  <footer>
+    <div class="layout-container">
+      <p>Copyright The Code Review</p>
+    </div>
+  </footer>
+</body>
+</html>

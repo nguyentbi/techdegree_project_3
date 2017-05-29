@@ -1,0 +1,213 @@
+
+
+
+/*                  base                                 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+header {
+  background-color: black;
+}
+
+header h1 {
+  color: white;
+  margin-top: 0;
+  padding: .8em .25em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 1.2em 0 .5em;
+}
+
+h2 + p {
+  font-size: .85em;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto 2.8em;
+}
+
+hr {
+  height: 10px;
+	border: 0;
+	box-shadow: inset 0 10px 8px -10px black;
+}
+
+      /*                  main-content                      */
+
+fieldset {
+  border: none;
+  padding: 5px;
+}
+
+legend {
+  font-weight: bolder;
+  padding: 1em 0;
+  font-size: 1.2em;
+}
+
+label {
+  color: #333;
+}
+
+input[placeholder] {
+  text-align: right;
+  padding-right: 1em;
+}
+
+.main-content input,
+select {
+  height: 2.2em;
+  width: 100%;
+  border-radius: 4px;
+  margin: .8em auto 1.2em;
+  background-color: #eee;
+}
+
+#zipCode {
+  height: 2em;
+  width: 50%;
+  border-radius: 4px;
+  margin: .8em 0 1.2em;
+  background-color: #eee;
+  display: block;
+}
+
+      /*                  secondary-content                      */
+
+legend + p {
+  margin-top: 0;
+  margin-bottom: .6em;
+}
+
+p.newsletterFormat {
+  margin-bottom: .6em;
+  margin-top: 1.5em;
+}
+
+.secondary-content input {
+  margin: .5em 0;
+}
+
+.secondary-content label:not(.textareaLabel) {
+  margin-left: .5em;
+  font-size: .9em;
+}
+
+.textareaLabel {
+  margin: 2em 0 -.5em;
+  display: block;
+  font-size: .9em;
+}
+
+textarea {
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color: #eee;
+}
+
+    /*                 footer                    */
+
+footer p {
+  margin: 1.5em auto 10em;
+  text-align: center;
+  opacity: .7;
+  font-size: .8em;
+}
+
+
+
+
+/*                  layout                                 */
+
+.layout-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+
+
+
+/*                  module                                 */
+
+.btn {
+  height: 3em;
+  width: 100%;
+  background-color: #000;
+  border-radius: 5px;
+  color: white;
+}
+
+
+
+
+
+/*                  state                                 */
+
+.main-content input:focus,
+textarea:focus,
+#zipCode:focus {
+  box-shadow: inset 0 0 10px 1px #999;
+  transition: background-color .3s ease;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+
+  /*                  base                                 */
+
+  legend {
+    padding: 1.5em 0 1.2em;
+  }
+
+  h2 {
+    margin-top: 2.5em;
+  }
+
+  h2 + p {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+
+  .main-content label,
+  .main-content input,
+  select {
+    display: inline-block;
+  }
+
+  .main-content label {
+    width: 30%;
+  }
+
+  .main-content input,
+  select {
+    width: 69%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #zipCode {
+    display: inline-block;
+    width: 25%;
+    margin-bottom: 3em;
+  }
+
+  /*                  layout                                 */
+
+  .layout-container {
+    width: 70%;
+  }
+}
