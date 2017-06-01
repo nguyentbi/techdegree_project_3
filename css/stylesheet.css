@@ -43,6 +43,13 @@ hr {
 }
 
       /*                  main-content                      */
+.form__fieldset--first {
+  background-image: linear-gradient(to bottom, white , #eee, white);
+}
+
+.form__fieldset--second {
+  background-image: linear-gradient(to bottom, white , #eee 30%, white 60%);
+}
 
 fieldset {
   border: none;
